@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  background-color: #8697c4;
+  padding: 20px;
+}
+
+.left-box {
+  flex: 0 0 25%; /* Left box takes 25% of the width */
+  background-color: #c5d1e9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.about-me {
+  font-size: 14px;
+  flex: 0 0 25%; /* About me section takes 25% of the width */
+  background-color: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
+  margin-left: 20px; /* Add some space between left box and about me section */
+}
+
+.right-box {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+  justify-content: flex-start; /* Align the boxes to the start of the right-box */
+  margin-left: 20px; /* Add some space between about me and right box */
+}
+
+.box1, .box2, .box3, .box4 {
+  flex: 0 0 100%; /* Each box takes up 48% of the right box's width */
+  padding: 20px;
+  border: 2px solid #c5d1e9;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  box-sizing: border-box; /* Ensure padding and borders are included in the width */
+}
+.box1 {
+  margin-top: 10px;
+  height: 150px;
+  
+}
+.box2{
+  height: 400px;
+
+}
+.box3{
+  height: 300px;
+}
+.box4 {
+  height: 300px;
+}
+
+.profile img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.skill-box,.lan-box {
+  background-color: #c5d1e9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.skill,.lang {
+  margin-bottom: 10px;
+}
+
+.skill-label, .lan-label {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.progress-bar {
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.containers{
+  background-color: #c5d1e9;
+  border-radius: 1%;
+  margin-left: 10px;
+}
+
+
+.progress-fill {
+  height: 100%;
+  background-color: #8697c4;
+}
+/* General Text in the Left Box */
+.left-box p {
+  font-size: 14px;
+}
+
+/* Contact Information Icons and Links */
+.left-box p i, 
+.left-box p a {
+  font-size: 13px;
+}
+
+
+/* Percentage Text in Progress Bars */
+.progress-fill::after {
+  font-size: 12px;
+}
+
+/* Section Titles */
+h3 {
+  font-size: 16px;
+}
